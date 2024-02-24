@@ -73,9 +73,15 @@ func main() {
 
 	//BINARY SERACH
 
-	tree := &binaryserach.Node{Key: 100}
+	tree := &binaryserach.Node{Key: 39}
 
-	tree.Insert(500)
-	fmt.Println(tree)
+	tree.Insert(400)
+	tree.Insert(40)
+	tree.Insert(80)
+	tree.Insert(4)
+	tree.Insert(30)
+	tree.Insert(90)
+
+	fmt.Println(tree.Serach(39))
 
 }

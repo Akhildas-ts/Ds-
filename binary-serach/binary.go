@@ -34,3 +34,25 @@ func (n *Node) Insert(k int) {
 	}
 
 }
+
+//Search will take in a key value
+// return the value with node
+
+func (n *Node) Serach(k int) bool {
+	if n == nil {
+		return false
+	}
+
+	if n.Key < k {
+		return n.Right.Serach(k)
+
+		
+	} else if n.Key > k {
+		
+	return n.Left.Serach(k)
+
+	}
+
+	return true
+
+}
