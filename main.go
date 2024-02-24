@@ -1,7 +1,8 @@
 package main
 
 import (
-	Linklist "stack/linkedlist"
+	"fmt"
+	binaryserach "stack/binary-serach"
 )
 
 // Stack
@@ -27,7 +28,7 @@ func (s *Stack) Pop() int {
 }
 func main() {
 
-	//stack
+	//STACK
 
 	// mystack := Stack{}
 	// fmt.Println(mystack)
@@ -38,7 +39,8 @@ func main() {
 	// mystack.Pop()
 	// fmt.Println(mystack)
 
-	//queue and deque
+	//QUEUE AND DEQUEUE
+
 	// q := Queue.Queue{}
 
 	// q.Queue(2)
@@ -46,34 +48,34 @@ func main() {
 	// q.Queue(40)
 	// fmt.Println(q)
 
-	// Linked list
+	// LINKED LIST
 
-	node1 := &Linklist.Node{Data: 10}
-	node2 := &Linklist.Node{Data: 20}
-	node3 := &Linklist.Node{Data: 30}
-	node4 := &Linklist.Node{Data: 40}
-	node5 := &Linklist.Node{Data: 50}
-	node6 := &Linklist.Node{Data: 60}
-	node7 := &Linklist.Node{Data: 70}
-	linkedList := Linklist.Linked{}
+	// node1 := &Linklist.Node{Data: 10}
+	// node2 := &Linklist.Node{Data: 20}
+	// node3 := &Linklist.Node{Data: 30}
+	// node4 := &Linklist.Node{Data: 40}
+	// node5 := &Linklist.Node{Data: 50}
+	// node6 := &Linklist.Node{Data: 60}
+	// node7 := &Linklist.Node{Data: 70}
+	// linkedList := Linklist.Linked{}
+	// linkedList.Prepend(node1)
+	// linkedList.Prepend(node2)
+	// linkedList.Prepend(node3)
+	// linkedList.Prepend(node4)
+	// linkedList.Prepend(node5)
+	// linkedList.Prepend(node6)
+	// linkedList.Prepend(node7)
 
-	linkedList.Prepend(node1)
-	linkedList.Prepend(node2)
-	linkedList.Prepend(node3)
-	linkedList.Prepend(node4)
-	linkedList.Prepend(node5)
-	linkedList.Prepend(node6)
-	linkedList.Prepend(node7)
+	// linkedList.PrinDataOnNode()
 
-	linkedList.PrinDataOnNode()
+	// linkedList.DeleteLinkedListData(70)
+	// linkedList.PrinDataOnNode()
 
-	// fmt.Println(linkedList)
+	//BINARY SERACH
 
-	linkedList.DeleteLinkedListData(70)
-	linkedList.PrinDataOnNode()
-	// fmt.Println("LinkedList after delete",linkedList)
+	tree := &binaryserach.Node{Key: 100}
 
-	// fmt.Println("Length of linked list:", linkedList.Lenght)
-	// fmt.Println("Data of the first node:", linkedList.Head.Data)
+	tree.Insert(500)
+	fmt.Println(tree)
 
 }
