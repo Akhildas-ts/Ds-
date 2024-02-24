@@ -2,30 +2,30 @@ package main
 
 import (
 	"fmt"
-	binaryserach "stack/binary-serach"
+	string_test "stack/string"
 )
 
-// Stack
-type Stack struct {
-	items []int
-}
+// // Stack
+// type Stack struct {
+// 	items []int
+// }
 
-// push element into the Stack
-func (s *Stack) Push(i int) {
+// // push element into the Stack
+// func (s *Stack) Push(i int) {
 
-	s.items = append(s.items, i)
+// 	s.items = append(s.items, i)
 
-}
+// }
 
-//Pop will remove the value at the end and
-// return the removed value
+// //Pop will remove the value at the end and
+// // return the removed value
 
-func (s *Stack) Pop() int {
-	l := len(s.items) - 1
-	removedElement := s.items[l]
-	s.items = s.items[:l]
-	return removedElement
-}
+//	func (s *Stack) Pop() int {
+//		l := len(s.items) - 1
+//		removedElement := s.items[l]
+//		s.items = s.items[:l]
+//		return removedElement
+//	}
 func main() {
 
 	//STACK
@@ -73,15 +73,21 @@ func main() {
 
 	//BINARY SERACH
 
-	tree := &binaryserach.Node{Key: 39}
+	// tree := &binaryserach.Node{Key: 39}
 
-	tree.Insert(400)
-	tree.Insert(40)
-	tree.Insert(80)
-	tree.Insert(4)
-	tree.Insert(30)
-	tree.Insert(90)
+	// tree.Insert(400)
+	// tree.Insert(40)
+	// tree.Insert(80)
+	// tree.Insert(4)
+	// tree.Insert(30)
+	// tree.Insert(90)
 
-	fmt.Println(tree.Serach(39))
+	// fmt.Println(tree.Serach(39))
+
+	//STRING
+	text := "aaaaw"
+	substring := "aa"
+
+	fmt.Println(string_test.CountSubstringOccurrences(text, substring))
 
 }
