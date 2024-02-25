@@ -91,10 +91,26 @@ func main() {
 
 	//6.CONVERT ARRAY INTO LINKED LIST
 
-	values := []int{3, 4, 6, 7, 2, 7}
-	list := Linklist.ConvertIntoArray(values)
-	list.PrintListInArray()
+	// values := []int{3, 4, 6, 7, 2, 7}
+	// list := Linklist.ConvertIntoArray(values)
+	// list.PrintListInArray()
+
+	// 7.INSERT AFTER THE NODE
+
+	linkedList := &Linklist.Linked{}
+    node1 := &Linklist.Node{Data: 10}
+	node2 := &Linklist.Node{Data: 20}
+	node3 := &Linklist.Node{Data: 30}
+	node4 := &Linklist.Node{Data: 40}
 
 
+	linkedList.Prepend(node1)
+	linkedList.Prepend(node2)
+	linkedList.Prepend(node3)
+	linkedList.Prepend(node4)
+
+    linkedList.InsertBefor(10,220)
+
+	linkedList.PrinDataOnNode()
 
 }
