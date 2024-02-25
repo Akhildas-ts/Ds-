@@ -85,7 +85,7 @@ func main() {
 	// fmt.Println(tree.Serach(39))
 
 	//STRING
-	text := "aaaaw"
+	text := "aaaawawaa"
 	substring := "aa"
 
 	fmt.Println(string_test.CountSubstringOccurrences(text, substring))
