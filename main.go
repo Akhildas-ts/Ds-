@@ -111,6 +111,7 @@ func main() {
 
     linkedList.InsertBefor(10,220)
 
+	linkedList.PrintReverseData()
 	linkedList.PrinDataOnNode()
 
 }

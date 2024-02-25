@@ -38,6 +38,24 @@ func (l Linked) PrinDataOnNode() {
 	fmt.Printf("\n")
 }
 
+func (l Linked) PrintReverseData() {
+	l.printRecursion(l.Head)
+	fmt.Println()
+
+}
+
+func (l Linked) printRecursion(node *Node) {
+
+	if node == nil {
+		return
+
+	}
+
+	l.printRecursion(node.Next)
+	fmt.Printf("%d ", node.Data)
+
+}
+
 //deleting the value from the linked List
 
 func (l *Linked) DeleteLinkedListData(value int) {
