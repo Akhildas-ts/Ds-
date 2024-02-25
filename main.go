@@ -1,8 +1,7 @@
 package main
 
 import (
-	"fmt"
-	string_test "stack/string"
+	Linklist "stack/linkedlist"
 )
 
 // // Stack
@@ -28,7 +27,7 @@ import (
 //	}
 func main() {
 
-	//STACK
+	//1.STACK
 
 	// mystack := Stack{}
 	// fmt.Println(mystack)
@@ -39,7 +38,7 @@ func main() {
 	// mystack.Pop()
 	// fmt.Println(mystack)
 
-	//QUEUE AND DEQUEUE
+	//2.QUEUE AND DEQUEUE
 
 	// q := Queue.Queue{}
 
@@ -48,7 +47,7 @@ func main() {
 	// q.Queue(40)
 	// fmt.Println(q)
 
-	// LINKED LIST
+	// 3.LINKED LIST
 
 	// node1 := &Linklist.Node{Data: 10}
 	// node2 := &Linklist.Node{Data: 20}
@@ -71,7 +70,7 @@ func main() {
 	// linkedList.DeleteLinkedListData(70)
 	// linkedList.PrinDataOnNode()
 
-	//BINARY SERACH
+	//4.BINARY SERACH
 
 	// tree := &binaryserach.Node{Key: 39}
 
@@ -84,10 +83,18 @@ func main() {
 
 	// fmt.Println(tree.Serach(39))
 
-	//STRING
-	text := "aaaawawaa"
-	substring := "aa"
+	//5.STRING
+	// text := "aaaawawaa"
+	// substring := "aa"
 
-	fmt.Println(string_test.CountSubstringOccurrences(text, substring))
+	// fmt.Println(string_test.CountSubstringOccurrences(text, substring))
+
+	//6.CONVERT ARRAY INTO LINKED LIST
+
+	values := []int{3, 4, 6, 7, 2, 7}
+	list := Linklist.ConvertIntoArray(values)
+	list.PrintListInArray()
+
+
 
 }
