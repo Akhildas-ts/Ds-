@@ -66,6 +66,7 @@ func main() {
 	// linkedList.Prepend(node7)
 
 	// linkedList.PrinDataOnNode()
+	
 
 	// linkedList.DeleteLinkedListData(70)
 	// linkedList.PrinDataOnNode()
@@ -97,21 +98,32 @@ func main() {
 
 	// 7.INSERT AFTER THE NODE
 
-	linkedList := &Linklist.Linked{}
-    node1 := &Linklist.Node{Data: 10}
-	node2 := &Linklist.Node{Data: 20}
-	node3 := &Linklist.Node{Data: 30}
-	node4 := &Linklist.Node{Data: 40}
+	// linkedList := &Linklist.Linked{}
+	// node1 := &Linklist.Node{Data: 10}
+	// node2 := &Linklist.Node{Data: 20}
+	// node3 := &Linklist.Node{Data: 30}
+	// node4 := &Linklist.Node{Data: 40}
 
+	// linkedList.Prepend(node1)
+	// linkedList.Prepend(node2)
+	// linkedList.Prepend(node3)
+	// linkedList.Prepend(node4)
 
-	linkedList.Prepend(node1)
-	linkedList.Prepend(node2)
-	linkedList.Prepend(node3)
-	linkedList.Prepend(node4)
+	// linkedList.InsertBefor(10,220)
 
-    linkedList.InsertBefor(10,220)
+	// linkedList.PrintReverseData()
 
-	linkedList.PrintReverseData()
-	linkedList.PrinDataOnNode()
+	//8. REMOVE DUPILCATE ELEMENT'S
+
+	head := &Linklist.Node{Data: 1}
+	head.Next = &Linklist.Node{Data: 9}
+	head.Next.Next = &Linklist.Node{Data: 2}
+	head.Next.Next.Next = &Linklist.Node{Data: 3}
+	head.Next.Next.Next.Next = &Linklist.Node{Data: 3}
+
+	// Remove duplicates
+	head = Linklist.RemoveDuplicates(head)
+
+	Linklist.DisplayList(head)
 
 }
