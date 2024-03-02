@@ -17,12 +17,12 @@ import Linklist "stack/linkedlist"
 // //Pop will remove the value at the end and
 // // return the removed value
 
-// 	func (s *Stack) Pop() int {
-// 		l := len(s.items) - 1
-// 		removedElement := s.items[l]
-// 		s.items = s.items[:l]
-// 		return removedElement
-// }
+//		func (s *Stack) Pop() int {
+//			l := len(s.items) - 1
+//			removedElement := s.items[l]
+//			s.items = s.items[:l]
+//			return removedElement
+//	}
 func main() {
 
 	// 1.STACK
@@ -46,21 +46,28 @@ func main() {
 	// fmt.Println(q)
 
 	// 3.LINKED LIST
-	// linkedList := Linklist.Linked{}
 
-	// node1 := &Linklist.Node{Data: 10}
-	// node2 := &Linklist.Node{Data: 20}
-	// node3 := &Linklist.Node{Data: 30}
-	// node4 := &Linklist.Node{Data: 50}
+	linkedList := &Linklist.Linked{}
+
+	node1 := &Linklist.Node{Data: 10}
+	node2 := &Linklist.Node{Data: 20}
+	node3 := &Linklist.Node{Data: 30}
+	node4 := &Linklist.Node{Data: 50}
 	// node5 := &Linklist.Node{Data: 50}
 	// node6 := &Linklist.Node{Data: 60}
 	// node7 := &Linklist.Node{Data: 70}
-	// linkedList.Prepend(node1)
-	// linkedList.Prepend(node2)
-	// linkedList.Prepend(node3)
-	// linkedList.Prepend(node4)
+	linkedList.Prepend(node1)
+	linkedList.Prepend(node2)
+	linkedList.Prepend(node3)
+	linkedList.Prepend(node4)
+	linkedList.RemoveNTHelement(linkedList.Head,4)
+   linkedList.PrintLinkedList(linkedList.Head)
+
+
 	// linkedList.Prepend(node5)
 	// linkedList.Prepend(node6)
+	// linkedList.RemoveNElement(2)
+	// linkedList.PrinDataOnNode()
 	// linkedList.Prepend(node7)
 
 	// Linklist.DisplayList(linkedList.Head)
@@ -121,13 +128,15 @@ func main() {
 	// head.Next.Next.Next.Next = &Linklist.Node{Data: 3}
 
 	// // Remove duplicates
-    //  linkedList.RemoveDuplicate()
+	//  linkedList.RemoveDuplicate()
 
 	// Linklist.DisplayList(linkedList.Head)
 
 	// // 9. DOUBULE LINKEDLIST CREATED
 
-	//   new := double.doubleLink
+	// new := double.DLinkedList
+
+	// new := double.doubleLink
 
 	// dobuleLinked.D_Append(2)
 	// dobuleLinked.D_Append(35)

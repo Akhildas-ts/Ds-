@@ -256,6 +256,18 @@ func (dl *DLinkedList) DLaddElement(val int) {
 	dl.length++
 }
 
+func (dl *DLinkedList)RemoveNTHelement(val int ){
+
+
+	lastNode:= dl.tail
+
+	for lastNode != nil{
+		fmt.Println("current data ",lastNode.data)
+		lastNode = lastNode.prec
+	}
+
+}
+
 func (dl DLinkedList) DprintNode() {
 
 	forPrint := dl.head
