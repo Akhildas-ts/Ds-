@@ -60,9 +60,6 @@ func main() {
 	linkedList.Prepend(node2)
 	linkedList.Prepend(node3)
 	linkedList.Prepend(node4)
-	linkedList.RemoveNTHelement(linkedList.Head,4)
-   linkedList.PrintLinkedList(linkedList.Head)
-
 
 	// linkedList.Prepend(node5)
 	// linkedList.Prepend(node6)
@@ -142,5 +139,14 @@ func main() {
 	// dobuleLinked.D_Append(35)
 	// dobuleLinked.D_Append(27)
 	// dobuleLinked.PrintDouble()
+
+	//10 . remove last nth element in singel linked list
+
+	// 	linkedList.RemoveNTHelement(linkedList.Head,4)
+	//    linkedList.PrintLinkedList(linkedList.Head)
+
+
+
+	
 
 }
