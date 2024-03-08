@@ -49,6 +49,7 @@ func Hash(key string) int {
 
 //insert will take in a key, create a node with the key and insert the node in the bucket..
 
+
 func (b *Bucket) Insert(k string) {
 
 	newNode := &bucketNode{Key: k}
@@ -77,6 +78,10 @@ func (b *Bucket) SerachHash(k string) bool {
 
 	return false
 }
+
+ 
+
+// DELETIN THE ELEMENTS FROM TO THE HASH TABLE.. 
 
 func (b *Bucket) DeleteHash(k string) {
 
