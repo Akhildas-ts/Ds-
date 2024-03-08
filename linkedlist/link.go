@@ -19,6 +19,8 @@ func (l *Linked) Prepend(n *Node) {
 
 	second := l.Head
 
+
+	
 	l.Head = n
 	l.Head.Next = second
 	l.Lenght++

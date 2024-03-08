@@ -1,6 +1,9 @@
 package main
 
-import Linklist "stack/linkedlist"
+import (
+	"fmt"
+	hashs "stack/hash"
+)
 
 // // Stack
 // type Stack struct {
@@ -47,19 +50,19 @@ func main() {
 
 	// 3.LINKED LIST
 
-	linkedList := &Linklist.Linked{}
+	// linkedList := &Linklist.Linked{}
 
-	node1 := &Linklist.Node{Data: 10}
-	node2 := &Linklist.Node{Data: 20}
-	node3 := &Linklist.Node{Data: 30}
-	node4 := &Linklist.Node{Data: 50}
+	// node1 := &Linklist.Node{Data: 10}
+	// node2 := &Linklist.Node{Data: 20}
+	// node3 := &Linklist.Node{Data: 30}
+	// node4 := &Linklist.Node{Data: 50}
 	// node5 := &Linklist.Node{Data: 50}
 	// node6 := &Linklist.Node{Data: 60}
 	// node7 := &Linklist.Node{Data: 70}
-	linkedList.Prepend(node1)
-	linkedList.Prepend(node2)
-	linkedList.Prepend(node3)
-	linkedList.Prepend(node4)
+	// linkedList.Prepend(node1)
+	// linkedList.Prepend(node2)
+	// linkedList.Prepend(node3)
+	// linkedList.Prepend(node4)
 
 	// linkedList.Prepend(node5)
 	// linkedList.Prepend(node6)
@@ -131,7 +134,10 @@ func main() {
 
 	// // 9. DOUBULE LINKEDLIST CREATED
 
-	// new := double.DLinkedList
+	// new := double.D_LinkedList{}
+
+	// new.D_Append(10)
+	// new.PrintDouble()
 
 	// new := double.doubleLink
 
@@ -145,8 +151,14 @@ func main() {
 	// 	linkedList.RemoveNTHelement(linkedList.Head,4)
 	//    linkedList.PrintLinkedList(linkedList.Head)
 
+	//A1. HASH INSERT
+	// hashtable := hashs.Init()
+	// // fmt.Println(hashtable)
 
-
-	
+	inHash := hashs.Bucket{}
+	k := "RANDY"
+	inHash.Insert(k)
+	fmt.Println(inHash)
+	fmt.Println(inHash.SerachHash("RANDY"))
 
 }
