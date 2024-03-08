@@ -1,5 +1,7 @@
 package hashs
 
+import "fmt"
+
 //array of size
 const Arraysize = 7
 
@@ -55,24 +57,55 @@ func (b *Bucket) Insert(k string) {
 	b.Head = newNode
 }
 
+//Serach for the key in the hash table in these case ..
 
-//Serach for the key in the hash table in these case .. 
+func (b *Bucket) SerachHash(k string) bool {
 
-func  (b *Bucket)SerachHash(k string)bool{
+	current := b.Head
 
- current := b.Head
-
- if b.Head == nil{
-	return false
- }
-
- for current != nil{
-
-	if current.Key == k{
-		return  true
+	if b.Head == nil {
+		return false
 	}
-	current = current.Next
- }
 
- return false
+	for current != nil {
+
+		if current.Key == k {
+			return true
+		}
+		current = current.Next
+	}
+
+	return false
+}
+
+func (b *Bucket) DeleteHash(k string) {
+
+	if b.Head == nil {
+		fmt.Println("there is no nodes")
+		return
+	}
+
+	if b.Head.Key == k {
+
+		fmt.Println("value at head deleted")
+
+		b.Head = b.Head.Next
+		return
+	}
+
+	current := b.Head
+
+	
+	for current.Next != nil{
+
+		if current.Next.Key == k{
+			fmt.Println("value delteed ")
+			return
+		}
+
+		current = current.Next
+
+	}
+
+
 }

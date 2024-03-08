@@ -159,6 +159,7 @@ func main() {
 	k := "RANDY"
 	inHash.Insert(k)
 	fmt.Println(inHash)
+	inHash.DeleteHash(k)
 	fmt.Println(inHash.SerachHash("RANDY"))
 
 }
