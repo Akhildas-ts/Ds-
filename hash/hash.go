@@ -20,6 +20,8 @@ type Bucket struct {
 type bucketNode struct {
 	Key  string
 	Next *bucketNode
+
+	
 }
 
 //Init will create the bucket in the each slot of the array  of the hash table

@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	hashs "stack/hash"
+	bubblesort "stack/bubble-sort"
 )
 
 // // Stack
@@ -155,11 +155,15 @@ func main() {
 	// hashtable := hashs.Init()
 	// // fmt.Println(hashtable)
 
-	inHash := hashs.Bucket{}
-	k := "RANDY"
-	inHash.Insert(k)
-	fmt.Println(inHash)
-	inHash.DeleteHash(k)
-	fmt.Println(inHash.SerachHash("RANDY"))
+	// inHash := hashs.Bucket{}
+	// k := "RANDY"
+	// inHash.Insert(k)
+	// fmt.Println(inHash)
+	// inHash.DeleteHash(k)
+	// fmt.Println(inHash.SerachHash("RANDY"))
 
+	arr := []int{2, 4, 6, 2, 6, 7, 29}
+	var store []int
+	store = bubblesort.BubbleSort(arr)
+	fmt.Println(store)
 }
