@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	bubblesort "stack/bubble-sort"
 )
 
@@ -162,8 +161,15 @@ func main() {
 	// inHash.DeleteHash(k)
 	// fmt.Println(inHash.SerachHash("RANDY"))
 
-	arr := []int{2, 4, 6, 2, 6, 7, 29}
-	var store []int
-	store = bubblesort.BubbleSort(arr)
-	fmt.Println(store)
+	// A3 bubble sort algoritham
+
+	// arr := []int{2, 4, 6, 2, 6, 7, 29}
+	// var store []int
+	// store = bubblesort.BubbleSort(arr)
+	// fmt.Println(store)
+
+	// A4 berfor n Element (bubble sort)
+	// arr := []int{3,6,2,4,5,10,9}
+
+	bubblesort.CheckItDivisible(39)
 }
