@@ -1,7 +1,8 @@
 package main
 
 import (
-	bubblesort "stack/bubble-sort"
+	"fmt"
+	insertionsort "stack/insertion-sort"
 )
 
 // // Stack
@@ -169,7 +170,14 @@ func main() {
 	// fmt.Println(store)
 
 	// A4 berfor n Element (bubble sort)
-	// arr := []int{3,6,2,4,5,10,9}
 
-	bubblesort.CheckItDivisible(39)
+	// bubblesort.CheckItDivisible(39)
+
+	//A5 insertion sort
+	arr := []int{3, 6, 2, 4, 5, 10, 9}
+
+	insertionsort.InsertionSort(arr)
+
+	fmt.Println(arr)
+	
 }
