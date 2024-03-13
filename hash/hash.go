@@ -8,6 +8,7 @@ const Arraysize = 7
 // HashTable will Hold an array
 type HashTable struct {
 	Array [Arraysize]*Bucket
+
 }
 
 //bucket is linked list so we need to describe like that that
@@ -20,8 +21,6 @@ type Bucket struct {
 type bucketNode struct {
 	Key  string
 	Next *bucketNode
-
-	
 }
 
 //Init will create the bucket in the each slot of the array  of the hash table
@@ -38,6 +37,8 @@ func Init() *HashTable {
 
 }
 
+
+
 // hash
 
 func Hash(key string) int {
@@ -50,7 +51,6 @@ func Hash(key string) int {
 }
 
 //insert will take in a key, create a node with the key and insert the node in the bucket..
-
 
 func (b *Bucket) Insert(k string) {
 
@@ -81,9 +81,7 @@ func (b *Bucket) SerachHash(k string) bool {
 	return false
 }
 
- 
-
-// DELETIN THE ELEMENTS FROM TO THE HASH TABLE.. 
+// DELETIN THE ELEMENTS FROM TO THE HASH TABLE..
 
 func (b *Bucket) DeleteHash(k string) {
 
@@ -102,10 +100,9 @@ func (b *Bucket) DeleteHash(k string) {
 
 	current := b.Head
 
-	
-	for current.Next != nil{
+	for current.Next != nil {
 
-		if current.Next.Key == k{
+		if current.Next.Key == k {
 			fmt.Println("value delteed ")
 			return
 		}
@@ -113,6 +110,5 @@ func (b *Bucket) DeleteHash(k string) {
 		current = current.Next
 
 	}
-
 
 }

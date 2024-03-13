@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	insertionsort "stack/insertion-sort"
+	quicksort "stack/quick-sort"
 )
 
 // // Stack
@@ -174,10 +174,31 @@ func main() {
 	// bubblesort.CheckItDivisible(39)
 
 	//A5 insertion sort
-	arr := []int{3, 6, 2, 4, 5, 10, 9}
+	// arr := []int{3, 6, 2, 4, 5, 10, 9}
 
-	insertionsort.InsertionSort(arr)
+	// insertionsort.InsertionSort(arr)
 
-	fmt.Println(arr)
-	
+	// fmt.Println(arr)
+
+	// A6 . Quick sort
+
+	// here is the algoritham , other are problems i solved with quick sort .. 
+
+	// arr := []int{2, 3, 7, 2, 4, 7, 8, 4}
+	// quicksort.QuickSort(arr,0,len(arr)-1)
+	// fmt.Println(arr)
+
+		// quicksort.LargestElementK(arr,3)
+
+	// student := []quicksort.Student{
+
+	// 	{Name: "akhil ",Age: 18,Grade: 10.00},
+	// 	{Name: "arun",Age: 20,Grade: 5.00},
+	// 	{Name: "anil",Age: 15,Grade: 20.00},
+	// 	{Name: "remesh",Age: 12,Grade: 30.00},
+	// 	{Name: "neran",Age: 10,Grade: 110.0},
+	// }
+
+	// quicksort.StudentSort(student)
+
 }

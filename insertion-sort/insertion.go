@@ -1,5 +1,9 @@
 package insertionsort
 
+import (
+	"fmt"
+)
+
 //Insertion sorting
 // we find the length of array
 // frist the loop will have one step front .
