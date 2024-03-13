@@ -1,8 +1,7 @@
 package main
 
 import (
-	"fmt"
-	quicksort "stack/quick-sort"
+	"stack/hash/problem"
 )
 
 // // Stack
@@ -182,13 +181,13 @@ func main() {
 
 	// A6 . Quick sort
 
-	// here is the algoritham , other are problems i solved with quick sort .. 
+	// here is the algoritham , other are problems i solved with quick sort ..
 
 	// arr := []int{2, 3, 7, 2, 4, 7, 8, 4}
 	// quicksort.QuickSort(arr,0,len(arr)-1)
 	// fmt.Println(arr)
 
-		// quicksort.LargestElementK(arr,3)
+	// quicksort.LargestElementK(arr,3)
 
 	// student := []quicksort.Student{
 
@@ -200,5 +199,14 @@ func main() {
 	// }
 
 	// quicksort.StudentSort(student)
+
+	// A7 problem solving ..
+	//  with hash table basic ..
+
+	// h1 := problem.Init1()
+	// fmt.Println(h1)
+
+	// nums := []int{2, 36,  7,  3,3}
+	// problem.ContainsDuplicate(nums)
 
 }
