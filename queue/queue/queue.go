@@ -13,14 +13,18 @@ func Constructor() myque {
 
 func (this *myque) push(x int) {
 
-	for len(this.queue1) > 0 {
-		this.queue2 = append(this.queue2, this.queue1[0])
-		this.queue1 = this.queue1[1:]
-	}
 
-	this.queue2 = append(this.queue2, x)
+	this.queue1 = append(this.queue1, x)
+	
 
-	this.queue1, this.queue2 = this.queue2, this.queue1
+	// for len(this.queue1) > 0 {
+	// 	this.queue2 = append(this.queue2, this.queue1[0])
+	// 	this.queue1 = this.queue1[1:]
+	// }
+
+	// this.queue2 = append(this.queue2, x)
+    
+	// this.queue1, this.queue2 = this.queue2, this.queue1
 }
 
 func (this *myque) pop() int {

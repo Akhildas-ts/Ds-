@@ -8,7 +8,7 @@ import "fmt"
 // capacity is the total size of the CQ
 // size  means how many elements availble ,so that size it means
 
-type MyCircularQueue struct {
+type  MyCircularQueue struct {
     size     int
     capacity int
     front    int

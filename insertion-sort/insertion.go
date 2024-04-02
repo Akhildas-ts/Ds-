@@ -1,9 +1,5 @@
 package insertionsort
 
-import (
-	"fmt"
-)
-
 //Insertion sorting
 // we find the length of array
 // frist the loop will have one step front .
@@ -18,8 +14,10 @@ func InsertionSort(arr []int) {
 		for j >= 0 && arr[j] > key {
 			arr[j+1] = arr[j] // Move elements greater than key one position ahead
 			j = j - 1
-		}
+		} 
 		arr[j+1] = key // Insert key at its correct position
 	}
 
 }
+
+// values := []int{3, 4, 6, 7, 2, 7}

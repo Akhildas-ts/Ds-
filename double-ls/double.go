@@ -6,7 +6,8 @@ type Node struct {
 	Data int
 	Prev *Node
 	Next *Node
-}
+}  
+
 
 type D_LinkedList struct {
 	Head *Node

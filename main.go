@@ -1,9 +1,5 @@
 package main
 
-import (
-	"stack/hash/problem"
-)
-
 // // Stack
 // type Stack struct {
 // 	items []int

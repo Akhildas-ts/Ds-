@@ -10,6 +10,7 @@ type Mystack struct {
 }
 
 func Construct() Mystack {
+
 	return Mystack{}
 }
 

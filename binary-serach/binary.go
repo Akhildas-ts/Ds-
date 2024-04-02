@@ -1,5 +1,8 @@
 package binaryserach
 
+
+// Binary search tree .. 
+
 //Node represent the componets of a binary serach tree
 type Node struct {
 	Key   int

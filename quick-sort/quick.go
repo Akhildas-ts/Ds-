@@ -1,4 +1,11 @@
-package quicksort
+package main
+
+import "fmt"
+
+// TIME COMPLEXITY OF QUICK SORT
+// *BEST CASE O(LOG N)
+// *AVERAGE CASE O(LOG N)
+// WORST CASE O(N * 2)
 
 // QUICK SORT ALOGRITHAM
 // frist of all we got a array then we need to take any index of value from the array , that value called piviot
@@ -26,6 +33,13 @@ func partition(arr []int, low, high int) int {
 
 	arr[i+1], arr[high] = arr[high], arr[i+1]
 	return i + 1
+}
+
+func main() {
+
+	arr := []int{2, 3, 5, 8, 7}
+	QuickSort(arr, 0, len(arr)-1)
+	fmt.Println(arr)
 }
 
 // QUICK SORTING WITH AGE OF STUDENT'S

@@ -32,7 +32,7 @@ func (this *MyCircularDeque) InsertFront(value int) bool {
 	this.front = (this.front - 1 + this.capacity) % this.capacity
 	this.queue1[this.front] = value
 	this.size++
-	this.size++
+
 	return true
 
 }
@@ -112,6 +112,10 @@ func main() {
 	fmt.Println(ob.InsertLast(20))
 	fmt.Println(ob.InsertLast(30))
 	fmt.Println(ob.InsertLast(40))
+	fmt.Println(ob.InsertLast(50))
+	fmt.Println(ob.InsertLast(60))
+	fmt.Println(ob.InsertLast(70))
+
 	// fmt.Println(ob.InsertLast(2))
 	// fmt.Println(ob.InsertLast(3))
 	fmt.Println(ob.GetFront())

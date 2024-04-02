@@ -1,4 +1,4 @@
-package hashs
+package main 
 
 import "fmt"
 
@@ -7,13 +7,17 @@ const Arraysize = 7
 
 // HashTable will Hold an array
 type HashTable struct {
+
 	Array [Arraysize]*Bucket
+	
+
 
 }
 
 //bucket is linked list so we need to describe like that that
 
 type Bucket struct {
+
 	Head *bucketNode
 }
 
@@ -112,3 +116,36 @@ func (b *Bucket) DeleteHash(k string) {
 	}
 
 }
+
+
+
+func main(){
+
+	// hashtable := Init()
+	// fmt.Println(hashtable)
+
+	// inHash := Bucket{}
+	// k := "RANDY"
+	// inHash.Insert(k)
+	// inHash.Insert("BINOY")
+	// inHash.Insert("AKHIL")
+	// fmt.Println(inHash)
+	// // inHash.DeleteHash(k)
+	// fmt.Println(inHash.SerachHash("RANDY"))
+	// fmt.Println(inHash.SerachHash("AKHIL"))
+	// fmt.Println(inHash.SerachHash("ARUN"))
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
